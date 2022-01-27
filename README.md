@@ -1,8 +1,8 @@
-# 基础算法
+# Basic algorithm
 
-## 查找
+## Search
 
-### 二分查找
+### binary search algorithm
 ```
 def search(arr,l,r,x):
     if r >= 1:
@@ -26,10 +26,10 @@ if result != -1:
 else:
     print('元素不在数组中')
 ```
-### 线性查分
+### linear search algorithm
 
-## 排列
-### 插入排序 Insertion Sort
+## Sort
+### Insertion Sort
 ```
 arr = [23, 13, 224, 10, 40,3]
 def insertionSort(arr):
@@ -45,7 +45,7 @@ print('排序后的数组：')
 for i in range(len(arr)):
     print('%d' %arr[i])
 ```
-## 快速排序 
+## Quicksort 
 Divide and conquer 把一个序列（list）分为较小和较大的2个子序列，然后递归地排序两个子序列。
 挑选基准值 pivot
 分割
@@ -80,7 +80,7 @@ print("排序后的数组:")
 for i in range(n):
     print("%d" % arr[i])
 ```
-### 选择排序 Selection sort
+### Selection sort
 首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置，然后，再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。
 ```
 import sys
@@ -100,7 +100,7 @@ print("排序后的数组：")
 for i in range(len(A)):
     print("%d" % A[i])
 ```
-### 冒泡排序
+### Bubble Sort
 它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来
 ```
 def bubbleSort(arr):
@@ -124,7 +124,7 @@ print("排序后的数组:")
 for i in range(len(arr)):
     print("%d" % arr[i])
 ```
-### 归并排序
+### Merge sort
 ```
 def merge(arr, l, m, r): 
     n1 = m - l + 1
@@ -191,7 +191,7 @@ for i in range(n):
     print ("%d" %arr[i])
 ```
 
-### 堆排序
+### Heapsort
 堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。堆排序可以说是一种利用堆的概念来排序的选择排序。
 ```
 def heapify(arr, n, i): 
@@ -252,7 +252,7 @@ arr = "wwwrunoobcom"
 ans = countSort(arr) 
 print ( "字符数组排序 %s"  %("".join(ans)) )
 ```
-### 希尔排序
+### Shellsort
 希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。
 希尔排序的基本思想是：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记录"基本有序"时，再对全体记录进行依次直接插入排序。
 ```
@@ -287,4 +287,4 @@ for i in range(n):
     print(arr[i])
 ```
 
-### 拓扑排序
+### Topological sorting
