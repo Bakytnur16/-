@@ -229,7 +229,7 @@ print ("After sort")
 for i in range(n): 
     print ("%d" %arr[i])
 ```
-### 计数排列
+### Counting sort
 The core of counting sorting is to convert the input data values into keys and store them in the extra array space opened up. As a kind of linear time complexity sorting, counting sorting requires that the input data must be an integer with a certain range.
 ```
 def countSort(arr):
